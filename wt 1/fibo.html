@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script type="text/javascript">
+    function fibo(){
+    var num = Number(document.cal.first.value);
+    var num1 = 0;
+    var num2 = 1;
+    var sum;
+    var i=1;
+    for(i = 1; i <= num; i++){
+    document.write("<br>"+num1);
+    sum = num1 + num2;
+    num1 = num2;
+    num2 = sum;
+   }
+
+
+    }
+</script>
+
+<form name="cal">
+    Number : <input type="text" name="first">
+    <input type="button" value="Click me" onclick="javascript:fibo();">
+</form>
+</body>
+</html>
